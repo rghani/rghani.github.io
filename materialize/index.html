@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	 <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <!--Import personal css file-->
+      <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Import icons-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <title>Rayyan Ghani: Home</title>
+
+      
+</head>
+
+<body class="blue-grey lighten-4">
+	<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <!--jQuery script to modify the dropdown menu settings-->
+      <script type="text/javascript">
+      $(document).ready(function(){
+      	$(".dropdown-button").dropdown({
+      inDuration: 200,
+      outDuration: 200,
+      constrain_width: true, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: true // Displays dropdown below the button
+      });
+    });
+      </script>
+
+      <script type="text/javascript">
+      $(document).ready(function(){
+      	$('.slider').slider({full_width: true, height: 550});
+      });
+      </script>
+
+    <!--Website code-->
+
+    <!--Dropdown Menu for My Projects Button-->
+    <ul id="dropdown1" class="dropdown-content">
+    	<li><a href="myprojectspage#safenightanchor">Safe Night</a></li>
+    	<li><a href="myprojectspage#easyblindanchor">Easy Blind</a></li>
+    	<li><a href="myprojectspage#fuelcellcaranchor">Fuel Cell Car</a></li>
+    	<li><a href="myprojectspage#seasoningdispensingrobotanchor">Seasoning Dispensing Robot</a></li>
+    </ul>
+
+    <!--Dropdown Menu for Contact Me Button-->
+    <ul id="dropdown2" class="dropdown-content">
+    	<li><a href="#">Facebook</a></li>
+    	<li><a href="#">LinkedIn</a></li>
+    	<li><a href="#">Github</a></li>
+    </ul>
+
+    <!--Navigation Bar-->
+    <nav>
+    	<div class="nav-wrapper blue-grey darken-2">
+    		<a href="#" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
+    		<ul id="nav-mobile" class="right hide-on-med-and-on-down">
+    			<li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+    			<li class="light-blue-text darken-4-text"><a class ="dropdown-button" href="myprojectspage" data-activates="dropdown1"><i class="tiny material-icons left">code</i>My Projects</a></li>
+    			<li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+    			<li class="light-blue-text darken-4-text"><a class="dropdown-button" href="#" data-activates="dropdown2">Contact Me</a></li>
+    		</ul>
+    	</div>
+    </nav>
+
+
+
+	    <!--Slider-->
+	    <div class="slider">
+	    <ul class="slides">
+	      <li class="valign-wrapper">
+	        <img src="images/safenightplaceholder.jpg" class="responsive-img"> <!-- Safe Night Arduino Project Image -->
+	        <div class="caption right-align valign">
+	          <h3 id="slidetext1">Safe Night Arduino Project</h3>
+	          <h5 class="light grey-text text-lighten-3">Bluetooth Controlled Security System</h5>
+	        </div>
+	      </li>
+	      <li>
+	        <img src="images/legofinal4.jpg"class="responsive-img"> <!--Seasoning Dispensing Robot -->
+	        <div class="caption left-align">
+	          <h3 id="slidetext2">Seasoning Dispensing Robot</h3>
+	          <h5 class="light grey-text text-lighten-3">Term-ending Mechatronics project</h5>
+	          <h5 class="light grey-text text-lighten-3"></h5>
+	        </div>
+	      </li>
+	      <li>
+	        <img src="http://lorempixel.com/580/250/nature/3"class="responsive-img"> <!--EasyBlind-->
+	        <div class="caption right-align">
+	          <h3>Easy Blind - Pending</h3>
+	          <h5 class="light grey-text text-lighten-3">Autonomous Blinds Controller</h5>
+	        </div>
+	      </li>
+	      <li>
+	        <img src="images/fuelcellcarimage1.jpg"class="responsive-img"> <!-- Fuel Cell Car -->
+	        <div class="caption left-align">
+	          <h3>Autonomous line-following car</h3>
+	          <h5 class="light grey-text text-lighten-3">Powered by Hydrogen Fuel Cells</h5>
+	        </di
+	      </li>
+	    </ul>
+	  </div>
+
+	    <!--Cards-->
+	    	<div class="row">
+	    		<!--Card 1-->
+	    		<div class="col m6">
+	    			<div class="card large hoverable" id="card1">
+	    				<div class="card-image">
+	    					<img src="images/aboutme.jpg" class="responsive-img">
+		    				<span class="card-title deep-orange-text text-accent-2"><b>About Me</b></span>
+	    				</div>
+		    				<div class="card-content">
+		    					<p class="light-blue-text text-darken-2">I'm an engineering student at the  University of Waterloo studying<a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering"> Mechatronics Engineering</a>  with a passion for integrated hardware and software development with the goal to pursue entrepenurship.</p>
+		    				</div>
+		    				<div class="card-action deep-orange-text text-accent-4">
+		    					<a href="aboutmepage">Click to learn more about me</a>
+		    				</div>
+	    			</div>
+	    		</div>
+	    		<!--Card 2-->
+	    		<div class="col m6">
+	    			<div class="card large hoverable" id="card2">
+	    				<div class="card-image">
+	    					<img src="images/projects.jpg" class="responsive-img" id="card2image">
+	    					<span class="card-title deep-orange-text text-accent-2"><b>My Projects</b></span>
+	    				</div>
+	    				<div class="card-content">
+	    					<p class="light-blue-text text-darken-2">I've worked on various personal and school related projects, ranging from hardware projects to developing autonomous robots.
+	    				</div>
+	    				<div class="card-action deep-orange-text text-darken-4">
+	    					<a href="myprojectspage">Click to view my projects in detail</a>
+						</div>
+	    			</div>
+	    		</div>
+	    	</div>
+
+    
+    <!--Footer-->
+    <footer class="page-footer blue-grey darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Rayyan Ghani</h5>
+                
+                <p class="grey-text text-lighten-4">Legal</p>
+              </div>
+              <div class="col l4 s12">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue-grey darken-4">
+            <div class="container">
+            2015 Copyright Text, All Rights Reserved
+            </div>
+          </div>
+        </footer>
+</body>
+
+</html>
