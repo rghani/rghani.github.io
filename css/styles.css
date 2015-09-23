@@ -1,0 +1,31 @@
+.parallax{
+  height:500px;
+  padding-bottom:0px;
+  border-bottom: 0px;
+  margin-bottom: 300px;
+}
+
+
+.card-image .activator{
+  margin-bottom: 2500px;
+}
+
+.card-panel{
+  height:inherit;
+}
+
+#safenighttext2{
+  width:100%;
+}
+#homeslide4{
+	transform:scale(.95);
+    -ms-transform:scale(.95); /* IE 9 */
+    -moz-transform:scale(.95); /* Firefox */
+    -webkit-transform:scale(.95); /* Safari and Chrome */
+    -o-transform:scale(.95); /* Opera */
+}
+.dropdown-content li{
+	
+}
+
+

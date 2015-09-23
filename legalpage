@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	 <!--Import materialize.css-->
+   <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
      <!--Import personal css file-->
       <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen,projection"/>
@@ -11,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <!--Import icons-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <title>Template</title>
+      <title>Rayyan Ghani: Legal</title>
 
       
 </head>
@@ -76,7 +75,7 @@
               <div class="col l6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
                 
-                <p class="grey-text text-lighten-4">Legal</p>
+                <p class="grey-text text-lighten-4"><a href="legalpage">Legal</a></p>
               </div>
               <div class="col l4 s12">
                 <ul>
