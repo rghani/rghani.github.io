@@ -23,16 +23,7 @@
 
       <!--jQuery script to modify the dropdown menu settings-->
       <script type="text/javascript">
-      $(document).ready(function(){
-      	$(".dropdown-button").dropdown({
-      inDuration: 200,
-      outDuration: 200,
-      constrain_width: true, // Does not change width of dropdown to that of the activator
-      hover: true, // Activate on hover
-      gutter: 0, // Spacing from edge
-      belowOrigin: true // Displays dropdown below the button
-      });
-    });
+      $(".button-collapse").sideNav();    });
       </script>
 
       <script type="text/javascript">
@@ -43,33 +34,28 @@
 
     <!--Website code-->
 
-    <!--Dropdown Menu for My Projects Button-->
-    <ul id="dropdown1" class="dropdown-content">
-    	<li><a href="myprojectspage#safenightanchor">Safe Night</a></li>
-    	<li><a href="myprojectspage#easyblindanchor">Easy Blind</a></li>
-    	<li><a href="myprojectspage#fuelcellcaranchor">Fuel Cell Car</a></li>
-    	<li><a href="myprojectspage#seasoningdispensingrobotanchor">Seasoning Dispensing Robot</a></li>
-    </ul>
+    
 
-    <!--Dropdown Menu for Contact Me Button-->
-    <ul id="dropdown2" class="dropdown-content">
-    	<li><a href="#">Facebook</a></li>
-    	<li><a href="#">LinkedIn</a></li>
-    	<li><a href="#">Github</a></li>
-    </ul>
-
-    <!--Navigation Bar-->
-    <nav>
-    	<div class="nav-wrapper blue-grey darken-2">
-    		<a href="index.html" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
-    		<ul id="nav-mobile" class="right hide-on-med-and-on-down">
-    			<li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-    			<li class="light-blue-text darken-4-text"><a class ="dropdown-button" href="myprojectspage" data-activates="dropdown1"><i class="tiny material-icons left">code</i>My Projects</a></li>
-    			<li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-    			<li class="light-blue-text darken-4-text"><a class="dropdown-button" href="#" data-activates="dropdown2">Contact Me</a></li>
-    		</ul>
-    	</div>
-    </nav>
+    <header>
+      <!--Navigation Bar-->
+      <nav>
+      	<div class="nav-wrapper blue-grey darken-2">
+      		<a href="#!" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      		<ul id="nav-mobile" class="right hide-on-med-and-on-down">
+      			<li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+      			<li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+      			<li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+      			<li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
+      		</ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>s
+          </ul>
+      	</div>
+      </nav>
+    </header>
 
 
 
@@ -78,22 +64,22 @@
 	    <ul class="slides">
 	      <li class="valign-wrapper">
 	        <img src="images/safenightplaceholder.jpg" class="responsive-img"> <!-- Safe Night Arduino Project Image -->
-	        <div class="caption right-align valign">
+	        <div class="caption left-align">
 	          <h3 id="slidetext1">Safe Night Arduino Project</h3>
 	          <h5 class="light grey-text text-lighten-3">Bluetooth Controlled Security System</h5>
 	        </div>
 	      </li>
 	      <li>
 	        <img src="images/legofinal4.jpg"class="responsive-img"> <!--Seasoning Dispensing Robot -->
-	        <div class="caption left-align">
+	        <div class="caption center-align">
 	          <h3 id="slidetext2">Seasoning Dispensing Robot</h3>
 	          <h5 class="light grey-text text-lighten-3">Term-ending Mechatronics project</h5>
 	          <h5 class="light grey-text text-lighten-3"></h5>
 	        </div>
 	      </li>
 	      <li>
-	        <img src="images/para1.jpg"class="responsive-img"> <!--EasyBlind-->
-	        <div class="caption right-align">
+	        <img src="images/easyblind1.jpg"class="responsive-img"> <!--EasyBlind-->
+	        <div class="caption left-align">
 	          <h3>Easy Blind - Pending</h3>
 	          <h5 class="light grey-text text-lighten-3">Autonomous Blinds Controller</h5>
 	        </div>
@@ -150,13 +136,13 @@
               <div class="col l6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
                 
-                <p class="grey-text text-lighten-4">Legal</p>
+
               </div>
               <div class="col l4 s12">
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Email</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
                 </ul>
               </div>
             </div>

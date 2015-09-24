@@ -24,14 +24,7 @@
       <!--jQuery script to modify the dropdown menu settings-->
       <script type="text/javascript">
       $(document).ready(function(){
-        $(".dropdown-button").dropdown({
-      inDuration: 200,
-      outDuration: 200,
-      constrain_width: true, // Does not change width of dropdown to that of the activator
-      hover: true, // Activate on hover
-      gutter: 0, // Spacing from edge
-      belowOrigin: true // Displays dropdown below the button
-      });
+       $(".button-collapse").sideNav();
     });
       </script>
 
@@ -41,46 +34,39 @@
       });
       </script>
 
-       <!--Dropdown Menu for My Projects Button-->
-    <ul id="dropdown1" class="dropdown-content">
-    	<li><a href="#!" name="safenightanchor">Safe Night</a></li>
-    	<li><a href="#!" name="easyblindanchor">Easy Blind</a></li>
-    	<li><a href="#!" name="fuelcellcaranchor">Fuel Cell Car</a></li>
-    	<li><a href="#!" name="seasoningdispensingrobotanchor">Seasoning Dispensing Robot</a></li>
-    </ul>
-
-    <!--Dropdown Menu for Contact Me Button-->
-    <ul id="dropdown2" class="dropdown-content">
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">LinkedIn</a></li>
-      <li><a href="#">Github</a></li>
-    </ul>
-
+       
+    
+    <header>
      <!--Navigation Bar-->
-    <nav>
-      <div class="nav-wrapper blue-grey darken-2">
-        <a href="index.html" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-on-down">
-          <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-          <li class="light-blue-text darken-4-text"><a class ="dropdown-button" href="myprojectspage" data-activates="dropdown1"><i class="tiny material-icons left">code</i>My Projects</a></li>
-          <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-          <li class="light-blue-text darken-4-text"><a class="dropdown-button" href="#" data-activates="dropdown2">Contact Me</a></li>
+      <nav>
+      	<div class="nav-wrapper blue-grey darken-2">
+      		<a href="index.html" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      		<ul id="nav-mobile" class="right hide-on-med-and-on-down">
+      			<li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+      			<li class="active light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+      			<li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+      			<li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
+      		</ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="active light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
         </ul>
-      </div>
-    </nav>
+      	</div>
+      </nav>
+    </header>
     <!--Tabs to select projects-->
     <div class="row">
-      <div class="col s12">
-        <ul class="tabs">
-          <li class="tab col s3"><a class="active" href="#SafeNight">Safe Night</a></li>
+      <div class="col l12">
+        <ul class="tabs hoverable">
+          <li class="tab col s3"><a href="#SafeNight">Safe Night</a></li>
           <li class="tab col s3"><a href="#EasyBlind">Easy Blind</a></li>
           <li class="tab col s3"><a href="#FuelCellCar">Fuel Cell Car</a></li>
           <li class="tab col s3"><a href="#SeasoningDispensingRobot">Seasoning Dispensing Robot</a></li>
         </ul>
       </div>
     </div>
-    <!--Divider will be added here later if it looks nice-->
-
 
     <!--Safe Night Tab-->
     <div id="SafeNight">
@@ -135,7 +121,7 @@
         <div class="col l12">
           <div class="card blue-grey hoverable" id="easyblindcard">
             <span class="card-title"><b>Easy Blind - Pending</b></span>
-            <p class="flow-text white-text">Easy Blind is an Arduino-based device that will utilize a photoresistor to detect the amount of light outside, and adjust the angle of your blinds accordingly. A sensor feedback algorithm will be developed to control the bipolar stepper motor in order to maximize the precision</p>
+            <p class="flow-text white-text">Easy Blind is an Arduino device that will utilize a photoresistor to detect the amount of light outside, and adjust the angle of your blinds accordingly. A sensor feedback algorithm will be developed to control the bipolar stepper motor in order to control the blinds with precision</p>
             <div class="container">
               <div class="card-panel hoverable" id="safenightkeylearnings">
                   <span class="black-text flow-text"><b>Key Learnings:</b></span>
@@ -192,17 +178,17 @@
             <img src="images/fuelcellcarimage1.jpg" class="responsive-img"> 
           </li>
           <li>
-            <img src="images/fuelcellcarimage2.jpg" class="responsive-img"> <!-- Safe Night Arduino Android App Image -->
+            <img src="images/fuelcellcarimage2.jpg" class="responsive-img"> 
           </li>
           <li>
-            <img src="images/fuelcellcarimage3.jpg" class="responsive-img"> <!--EasyBlind-->
+            <img src="images/fuelcellcarimage3.jpg" class="responsive-img">
           </li>
         </ul>
       </div>
     </div>
 
     <!--Seasoning Dispensing Robot-->
-    <div id="SeasoningDispensingRobot">
+    <div id="SeasoningDispensingRobot" name="SeasoningDispensingRobot">
       <div class="row">
       <!--description of project-->
         <div class="col l12">
@@ -223,7 +209,7 @@
                 <ul class="collection">
                   <li class="collection-item flow-text">Measuring and machining the seasoning cup holders using bandsaws, and sanders</li>
                   <li class="collection-item flow-text">Coding and debugging RobotC code</li>
-                  <li class="collection-item flow-text">Technical report writing, and utuiized metrics to make mechanical design decisions</li>
+                  <li class="collection-item flow-text">Technical report writing, and utilized metrics to make mechanical design decisions</li>
                 </ul>
               </div>
             </div>
@@ -236,27 +222,27 @@
       <div class="slider">
         <ul class="slides">
           <li>
-            <img src="images/legofinal1.jpg">
+            <img src="images/legofinal1.jpg"class="responsive-img">
             <div class="caption right-align valign">
               <h3 id="slidetext1">Machined using bandsaws to detect spice level</h3>
             </div>
           </li>
           <li>
-            <img src="images/legofinal2.jpg">
+            <img src="images/legofinal2.jpg"class="responsive-img">
             <div class="caption">
               <h3 id="slidetext2">Spice container holders that rotated to dispense certain amounts of seasoning</h3>
             </div>
           </li>
           <li>
-             <img src="images/legofinal4.jpg">
+             <img src="images/legofinal4.jpg"class="responsive-img">
             <div class="caption">
               <h3>Side view showcasing the colour sensor used to scan plates to indicate spice level</h3>
             </div>
           </li>
-          <li>
-            <img src="images/legofinal3.jpg">
+          <li class="valign-wrapper">
+            <img src="images/legofinal3.jpg" class="responsive-img valign " id="legofinalpic3">
             <div class="caption">
-              <h3 id="slidetext3">Final view of the robot</h3>
+              <h3 id="slidetext3">Central assembly of robot</h3>
             </div>
           </li>
         </ul>
@@ -270,13 +256,13 @@
               <div class="col l6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
                 
-                <p class="grey-text text-lighten-4">Legal</p>
+
               </div>
               <div class="col l4 s12">
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
                   <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
                 </ul>
               </div>
             </div>

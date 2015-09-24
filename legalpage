@@ -37,32 +37,27 @@
 
     <!--Website code-->
 
-    <!--Dropdown Menu for My Projects Button-->
-    <ul id="dropdown1" class="dropdown-content">
-    	<li><a href="myprojectspage#safenightanchor">Safe Night</a></li>
-    	<li><a href="myprojectspage#easyblindanchor">Easy Blind</a></li>
-    	<li><a href="myprojectspage#fuelcellcaranchor">Fuel Cell Car</a></li>
-    	<li><a href="myprojectspage#seasoningdispensingrobotanchor">Seasoning Dispensing Robot</a></li>
-    </ul>
 
-    <!--Dropdown Menu for Contact Me Button-->
-    <ul id="dropdown2" class="dropdown-content">
-    	<li><a href="#">Facebook</a></li>
-    	<li><a href="#">LinkedIn</a></li>
-    	<li><a href="#">Github</a></li>
-    </ul>
+
 
     <!--Navigation Bar-->
     <nav>
-    	<div class="nav-wrapper blue-grey darken-2">
-    		<a href="#" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
-    		<ul id="nav-mobile" class="right hide-on-med-and-on-down">
-    			<li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-    			<li class="light-blue-text darken-4-text"><a class ="dropdown-button" href="myprojectspage" data-activates="dropdown1"><i class="tiny material-icons left">code</i>My Projects</a></li>
-    			<li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-    			<li class="light-blue-text darken-4-text"><a class="dropdown-button" href="#" data-activates="dropdown2">Contact Me</a></li>
-    		</ul>
-    	</div>
+      <div class="nav-wrapper blue-grey darken-2">
+        <a href="index.html" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-on-down">
+          <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+          <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+          <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+          <li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+          <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+          <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+          <li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
+      </ul>
+      </div>
     </nav>
 
 

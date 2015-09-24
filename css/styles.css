@@ -24,8 +24,30 @@
     -webkit-transform:scale(.95); /* Safari and Chrome */
     -o-transform:scale(.95); /* Opera */
 }
-.dropdown-content li{
-	
+
+
+#legofinalpic3{
+	display:block;
+    width:100%; /* you can use % */
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.tabs .tab a{
+    transition-property: display;
+    transition-duration: 0.50ss;
+    transition-timing-function: ease-in-out;
+    width: 100%;
+}
+
+#abtmecardtxt{
+	font-size: 1.2rem;
+}
+#abtmecard3txt{
+	font-size: 1.2rem;
 }
 
 
