@@ -21,9 +21,11 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
 
-      <!--jQuery script to modify the dropdown menu settings-->
+      <!--jQuery script to modify the dropdown menu settings-->   
       <script type="text/javascript">
-      $(".button-collapse").sideNav();    });
+      $(document).ready(function(){
+        $(".button-collapse").sideNav();
+      });
       </script>
 
       <script type="text/javascript">
@@ -38,11 +40,17 @@
 
     <header>
       <!--Navigation Bar-->
-      <nav>
+      <div class="navbar-fixed">
+      <nav class="z-depth-3">
       	<div class="nav-wrapper blue-grey darken-2">
-      		<a href="#!" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
+      		<a href="index.html" class="brand-logo valign-wrapper hide-on-small-only">
+            <img src="images/rayyan-logo.png" class="valign" style="height: 60px; width:60px; margin-left:20px; margin-top:2px">
+          </a>
+          <a href="index.html" class="brand-logo valign-wrapper hide-on-med-and-up">
+            <img src="images/rayyan-logo.png" class="valign" style="height:50px; width:50px; margin-left:20px; margin-top:1px">
+          </a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      		<ul id="nav-mobile" class="right hide-on-med-and-on-down">
+      		<ul id="nav-mobile" class="right hide-on-med-and-down">
       			<li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
       			<li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
       			<li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
@@ -55,6 +63,7 @@
           </ul>
       	</div>
       </nav>
+      </div>
     </header>
 
 
@@ -97,7 +106,7 @@
 	    <!--Cards-->
 	    	<div class="row">
 	    		<!--Card 1-->
-	    		<div class="col m6">
+	    		<div class="col l6 m6 s12">
 	    			<div class="card large hoverable" id="card1">
 	    				<div class="card-image">
 	    					<img src="images/aboutme.jpg" class="responsive-img">
@@ -112,7 +121,7 @@
 	    			</div>
 	    		</div>
 	    		<!--Card 2-->
-	    		<div class="col m6">
+	    		<div class="col l6 m6 s12">
 	    			<div class="card large hoverable" id="card2">
 	    				<div class="card-image">
 	    					<img src="images/projects.jpg" class="responsive-img" id="card2image">
@@ -135,13 +144,10 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
-                
-
               </div>
               <div class="col l4 s12">
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Email</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
                   <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
                 </ul>
               </div>
@@ -149,7 +155,7 @@
           </div>
           <div class="footer-copyright blue-grey darken-4">
             <div class="container">
-            2015 Copyright Text, All Rights Reserved
+              ©2015 | Rayyan Ghani
             </div>
           </div>
         </footer>

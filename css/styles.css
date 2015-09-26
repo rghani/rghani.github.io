@@ -1,5 +1,5 @@
 .parallax{
-  height:500px;
+  height:480px;
   padding-bottom:0px;
   border-bottom: 0px;
   margin-bottom: 300px;
@@ -11,18 +11,22 @@
 }
 
 .card-panel{
-  height:inherit;
+	height: inherit; !important;
+
+}
+.card-content{
+	height:inherit;
 }
 
 #safenighttext2{
   width:100%;
 }
 #homeslide4{
-	transform:scale(.95);
-    -ms-transform:scale(.95); /* IE 9 */
-    -moz-transform:scale(.95); /* Firefox */
-    -webkit-transform:scale(.95); /* Safari and Chrome */
-    -o-transform:scale(.95); /* Opera */
+	transform:scale(1);
+    -ms-transform:scale(1); /* IE 9 */
+    -moz-transform:scale(1); /* Firefox */
+    -webkit-transform:scale(1); /* Safari and Chrome */
+    -o-transform:scale(1); /* Opera */
 }
 
 
@@ -50,4 +54,20 @@
 	font-size: 1.2rem;
 }
 
+#educationpicture{
+	height:inherit;
+}
+.card.large .card-content {
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.card-large .card-title{
+	position:relative;
+	bottom:5px;
+	left: 0;
+	right: 0;
+}
 

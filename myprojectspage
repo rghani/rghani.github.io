@@ -37,29 +37,37 @@
        
     
     <header>
-     <!--Navigation Bar-->
-      <nav>
-      	<div class="nav-wrapper blue-grey darken-2">
-      		<a href="index.html" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
+      <!--Navigation Bar-->
+      <div class="navbar-fixed">
+      <nav class="z-depth-3">
+        <div class="nav-wrapper blue-grey darken-2">
+          <a href="index.html" class="brand-logo valign-wrapper hide-on-small-only">
+            <img src="images/rayyan-logo.png" class="valign" style="height: 60px; width:60px; margin-left:20px; margin-top:2px">
+          </a>
+          <a href="index.html" class="brand-logo valign-wrapper hide-on-med-and-up">
+            <img src="images/rayyan-logo.png" class="valign" style="height:50px; width:50px; margin-left:20px; margin-top:1px">
+          </a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      		<ul id="nav-mobile" class="right hide-on-med-and-on-down">
-      			<li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-      			<li class="active light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
-      			<li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-      			<li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
-      		</ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+            <li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
+          </ul>
           <ul class="side-nav" id="mobile-demo">
             <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-            <li class="active light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
-            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-        </ul>
-      	</div>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>s
+          </ul>
+        </div>
       </nav>
+      </div>
     </header>
+
     <!--Tabs to select projects-->
     <div class="row">
-      <div class="col l12">
-        <ul class="tabs hoverable">
+      <div class="col l12 m12 s12">
+        <ul class="tabs hoverable z-depth-1   ">
           <li class="tab col s3"><a href="#SafeNight">Safe Night</a></li>
           <li class="tab col s3"><a href="#EasyBlind">Easy Blind</a></li>
           <li class="tab col s3"><a href="#FuelCellCar">Fuel Cell Car</a></li>
@@ -72,9 +80,8 @@
     <div id="SafeNight">
       <div class="row">
       <!--description of project-->
-        <div class="col l12">
+        <div class="col l12 m12 s12">
           <div class="card blue-grey hoverable" id="safenightcard">
-            <div class="col l6">
               <div class="card-content white-text">
                 <span class="card-title"><b>Project Description</b></span>
                 <p class="flow-text">The Safe Night device is a security system that communicates with a companion Android app using Bluetooth Serial communication. It is equipped with an LCD display, a temperature sensor, and a servo motor. As my first Arduino project, it was designed to secure a box or a small container.</p>  
@@ -83,8 +90,12 @@
                 </div>
                 <p class="flow-text">This project started during the summer of 2015 after I had completed the beginner starter projects for the Arduino Uno. I was inspired to create this when I saw my old grade 6 science project in the closet, a plastic box which triggered an alarm when opened. I sought to build upon that concept using my newfound skills in hardware and programming.</p>
               </div>
-            </div>
-            <div class="col l6 container">
+          </div>
+        </div>
+      </div>
+      <!--Key Learnings-->
+      <div class="row">
+            <div class="col l12 m12 s12">
               <div class="card-panel hoverable" id="safenightkeylearnings">
                 <span class="black-text flow-text"><b>Key Learnings:</b></span>
                 <ul class="collection">
@@ -94,11 +105,13 @@
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
       </div>
 
+        
+      
+
       <!--Slider with images of Safe Night-->
+    <div class="row">
       <div class="slider">
         <ul class="slides">
          <li>
@@ -112,18 +125,18 @@
           </li>
         </ul>
       </div>
-
     </div>
+  </div>
 
     <!--Easy Blind Tab for Potential Project-->
     <div id="EasyBlind">
       <div class="row">
-        <div class="col l12">
+        <div class="col l12 m12 s12">
           <div class="card blue-grey hoverable" id="easyblindcard">
-            <span class="card-title"><b>Easy Blind - Pending</b></span>
+            <span class="card-title"><h5 class="left-align"><b>Easy Blind - Pending</b></h5></span>
             <p class="flow-text white-text">Easy Blind is an Arduino device that will utilize a photoresistor to detect the amount of light outside, and adjust the angle of your blinds accordingly. A sensor feedback algorithm will be developed to control the bipolar stepper motor in order to control the blinds with precision</p>
-            <div class="container">
-              <div class="card-panel hoverable" id="safenightkeylearnings">
+            <div class="col l12 m12 s12">
+              <div class="card-panel hoverable" id="easyblindkeylearnings">
                   <span class="black-text flow-text"><b>Key Learnings:</b></span>
                   <ul class="collection">
                     <li class="collection-item flow-text">Understanding control theory and applying the feedback loop in adjusting the blinds</li>
@@ -142,20 +155,22 @@
     <div id="FuelCellCar">
       <div class="row">
       <!--description of project-->
-        <div class="col l12">
+        <div class="col l12 m12 s12">
           <div class="card blue-grey hoverable" id="fuelcellcard">
-            <div class="col l6">
-              <div class="card-content white-text">
+              <div class="card-content white-text"> 
                 <span class="card-title"><b>Project Description</b></span>
                 <p class="flow-text">This project consists of a line following car powered by Hydrogen PEM Fuel Cells. The car utilized light and colour sensors to navigate a course, and a custom written algorithm written in C++ to handle forks in the path and dead-ends to reach the desired destination. A TI MSP430 microcontroller was used to control the two brushed DC motors.</p>
                 <div class="section">
                   <div class="divider"></div>
                 </div>
-                <p class="flow-text" id="safenighttext2">The most important lesson I learned from this project is that when developing a product, factors besides the hardware and software development must be considered, like the economic, business, and environmental factors.  In order to ensure that the car would have the longest run time possible, the fuel cells had to be frequently hydrated. The temperature, humidity were some factors that had to be considered for storage as well. Consequently, this project inspired me to contribute to the eventual goal of vehicles on the road being powered by alternative means of energy</p>
+                <p class="flow-text" id="safenighttext2">The most important lesson I learned from this project was that when developing a product, factors besides the hardware and software development must be considered, like the economic, business, and environmental factors.  In order to ensure that the car would have the longest run time possible, the fuel cells had to be frequently hydrated. The temperature, humidity were some factors that had to be considered for storage as well. Consequently, this project inspired me to contribute to the eventual goal of vehicles on the road being powered by alternative means of energy</p>
               </div>
-            </div>
-            <div class="col l6">
-              <div class="card-panel hoverable" id="safenightkeylearnings">
+          </div>
+        </div>
+      </div>
+          <div class="row">
+            <div class="col l12 m12 s12">
+              <div class="card-panel hoverable" id="fuelcellkeylearnings">
                 <span class="black-text flow-text"><b>Key Learnings:</b></span>
                 <ul class="collection">
                   <li class="collection-item flow-text">Learned how to develop a line following algorithm in C++ that could forks and dead-ends</li>
@@ -166,34 +181,34 @@
               </div>
             </div>
           </div>
-        </div>
         
         
-      </div>
+      
 
         <!--Slider with images of Fuel Cell Car Project-->
-        <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="images/fuelcellcarimage1.jpg" class="responsive-img"> 
-          </li>
-          <li>
-            <img src="images/fuelcellcarimage2.jpg" class="responsive-img"> 
-          </li>
-          <li>
-            <img src="images/fuelcellcarimage3.jpg" class="responsive-img">
-          </li>
-        </ul>
-      </div>
+        <div class="row">
+          <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="images/fuelcellcarimage1.jpg" class="responsive-img"> 
+              </li>
+              <li>
+                <img src="images/fuelcellcarimage2.jpg" class="responsive-img"> 
+              </li>
+              <li>
+                <img src="images/fuelcellcarimage5.jpg" class="responsive-img">
+              </li>
+            </ul>
+          </div>
+        </div>
     </div>
 
     <!--Seasoning Dispensing Robot-->
     <div id="SeasoningDispensingRobot" name="SeasoningDispensingRobot">
       <div class="row">
       <!--description of project-->
-        <div class="col l12">
+        <div class="col l12 m12 s12">
           <div class="card blue-grey hoverable" id="seasoningdispensingrobotcard">
-            <div class="col l6">
               <div class="card-content white-text">
                 <span class="card-title"><b>Project Description</b></span>
                 <p class="flow-text">This robot was built with the LEGO NXT Robot Kit, and programmed using RobotC. It featured a colour sensor that detected the colour, and dispensed a certain amount of seasoning according to the colour detected. An ultrasonic sensor was used to ensure seasoning occured while the path was clear. Two motors with encoders were used to track precise rotations in order to regulate the amount of seasoning dispensed.</p>
@@ -202,50 +217,56 @@
                 </div>
                 <p class="flow-text">The idea behind this project was to automate the process of seasoning dishes immediately before being served to customers in a restaraunt. Plates would be color coded to indicate the desired spice level, and the robot would leverage the data from the color sensor to detect it, and dispense the spice accordingly. Aside from the technical aspect of this project, I also made design decisions using metrics and was responsible for the technical report writing of this project.</p>
               </div>
-            </div>
-            <div class="col l6">
-              <div class="card-panel hoverable" id="safenightkeylearnings">
-                <span class="flow-text"><b>Key Learnings:</b></span>
-                <ul class="collection">
-                  <li class="collection-item flow-text">Measuring and machining the seasoning cup holders using bandsaws, and sanders</li>
-                  <li class="collection-item flow-text">Coding and debugging RobotC code</li>
-                  <li class="collection-item flow-text">Technical report writing, and utilized metrics to make mechanical design decisions</li>
-                </ul>
-              </div>
-            </div>
           </div>
-        </div> 
+        </div>
+
+      <div class="row">
+        <div class="col l12 m12 s12">
+          <div class="card-panel hoverable" id="safenightkeylearnings">
+            <span class="flow-text"><b>Key Learnings:</b></span>
+            <ul class="collection">
+              <li class="collection-item flow-text">Measuring and machining the seasoning cup holders using bandsaws, and sanders</li>
+              <li class="collection-item flow-text">Coding and debugging RobotC code</li>
+              <li class="collection-item flow-text">Technical report writing, and utilized metrics to make mechanical design decisions</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
+
+      
 
 
-      <!--Slider with images of Seasoning Dispensing Robot Project-->
-      <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="images/legofinal1.jpg"class="responsive-img">
-            <div class="caption right-align valign">
-              <h3 id="slidetext1">Machined using bandsaws to detect spice level</h3>
-            </div>
-          </li>
-          <li>
-            <img src="images/legofinal2.jpg"class="responsive-img">
-            <div class="caption">
-              <h3 id="slidetext2">Spice container holders that rotated to dispense certain amounts of seasoning</h3>
-            </div>
-          </li>
-          <li>
-             <img src="images/legofinal4.jpg"class="responsive-img">
-            <div class="caption">
-              <h3>Side view showcasing the colour sensor used to scan plates to indicate spice level</h3>
-            </div>
-          </li>
-          <li class="valign-wrapper">
-            <img src="images/legofinal3.jpg" class="responsive-img valign " id="legofinalpic3">
-            <div class="caption">
-              <h3 id="slidetext3">Central assembly of robot</h3>
-            </div>
-          </li>
-        </ul>
+    <!--Slider with images of Seasoning Dispensing Robot Project-->
+      <div class="row">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="images/legofinal1.jpg"class="responsive-img">
+              <div class="caption right-align valign">
+                <h3 id="slidetext1">Machined using bandsaws to detect spice level</h3>
+              </div>
+            </li>
+            <li>
+              <img src="images/legofinal2.jpg"class="responsive-img">
+              <div class="caption">
+                <h3 id="slidetext2">Spice container holders that rotated to dispense certain amounts of seasoning</h3>
+              </div>
+            </li>
+            <li>
+               <img src="images/legofinal4.jpg"class="responsive-img">
+              <div class="caption">
+                <h3>Side view showcasing the colour sensor used to scan plates to indicate spice level</h3>
+              </div>
+            </li>
+            <li class="valign-wrapper">
+              <img src="images/legofinal3.jpg" class="responsive-img valign " id="legofinalpic3">
+              <div class="caption">
+                <h3 id="slidetext3">Central assembly of robot</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -260,8 +281,7 @@
               </div>
               <div class="col l4 s12">
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
                   <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
                 </ul>
               </div>
@@ -269,7 +289,7 @@
           </div>
           <div class="footer-copyright blue-grey darken-4">
             <div class="container">
-            2015 Copyright Text, All Rights Reserved
+            © 2015 | Rayyan Ghani
             </div>
           </div>
         </footer>

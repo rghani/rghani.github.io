@@ -25,7 +25,7 @@
       <script type="text/javascript">
       $(document).ready(function(){
       	$(".button-collapse").sideNav();
-    });
+      });
       </script>
 
       <script type="text/javascript">
@@ -49,25 +49,32 @@
 
        
       <header>
-       <!--Navigation Bar-->
-        <nav>
-          <div class="nav-wrapper blue-grey darken-2">
-            <a href="index.html" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-on-down">
-              <li class="active light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-              <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
-              <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-              <li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-              <li class="active light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-              <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
-              <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+      <!--Navigation Bar-->
+      <div class="navbar-fixed">
+      <nav class="z-depth-3">
+        <div class="nav-wrapper blue-grey darken-2">
+          <a href="index.html" class="brand-logo valign-wrapper hide-on-small-only">
+            <img src="images/rayyan-logo.png" class="valign" style="height: 60px; width:60px; margin-left:20px; margin-top:2px">
+          </a>
+          <a href="index.html" class="brand-logo valign-wrapper hide-on-med-and-up">
+            <img src="images/rayyan-logo.png" class="valign" style="height:50px; width:50px; margin-left:20px; margin-top:1px">
+          </a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+            <li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
           </ul>
-          </div>
-        </nav>
-      </header>
+          <ul class="side-nav" id="mobile-demo">
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>s
+          </ul>
+        </div>
+      </nav>
+      </div>
+    </header>
 
    
     <!--First image for parallax here-->
@@ -78,17 +85,17 @@
 	<!--About Me Page Conent-->
 	<div class="section">
 			<div class="row">
-				<h1 class="center-align flow-text">About Me</h1>
+				<h1 class="center-align flow-text light-blue-text text-darken-4"><b>About Me</b></h1>
 
 				<!--Education Card-->
-				<div class="col l4">
+				<div class="col l4 m4 s12">
 					<div class="card medium hoverable">
 					    <div class="card-image waves-effect waves-block waves-light" >
-					      <img class="activator responsive-img" id="educationpicture" src="">
+					      <img class="activator responsive-img" id="educationpicture" src="images/educationpicture.jpg">
 					    </div>
 					    <div class="card-content">
 					      <span class="card-title activator deep-orange-text text-accent-2">Education<i class="material-icons right">more_vert</i></span>
-					      <p class="deep-orange-text text-accent-4">Click to learn about what I'm studying</p>
+					      <p class="deep-orange-text text-accent-4">Click the title to learn about what I'm studying</p>
 					    </div>
 					    <div class="card-reveal">
 					      <span class="card-title grey-text text-darken-4"><b>Education</b><i class="material-icons right">close</i></span>
@@ -99,14 +106,14 @@
 				  	</div>
 				</div>
 				<!--Aspirations Card-->
-				<div class="col l4">
+				<div class="col l4 m4 s12">
 					<div class="card medium hoverable">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator responsive-img" id="aspirationspicture" src="images/aspirations.jpg">
 					    </div>
 					    <div class="card-content">
 					      <span class="card-title activator deep-orange-text text-accent-2">Aspirations<i class="material-icons right">more_vert</i></span>
-					      <p class="deep-orange-text text-accent-4">Click to learn about my long-term goals</p>
+					      <p class="deep-orange-text text-accent-4">Click the title to learn about my long-term goals</p>
 					    </div>
 					    <div class="card-reveal">
 					      <span class="card-title grey-text text-darken-4"><b>Aspirations</b><i class="material-icons right">close</i></span>
@@ -115,14 +122,14 @@
 				  	</div>
 				</div>
 				<!--Experience-->
-				<div class="col l4">
+				<div class="col l4 m4 s12">
 					<div class="card medium hoverable">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator responsive-img" src="images/aboutme.jpg">
 					    </div>
 					    <div class="card-content">
 					      <span class="card-title activator deep-orange-text text-accent-2">Experience<i class="material-icons right">more_vert</i></span>
-					      <p class="deep-orange-text text-accent-4">Click to learn about my skillset</p>
+					      <p class="deep-orange-text text-accent-4">Click the title to learn about my skillset</p>
 					    </div>
 					    <div class="card-reveal"> 
 					      <span class="card-title grey-text text-darken-4"><b>Experience</b><i class="material-icons right">close</i></span>
@@ -150,14 +157,14 @@
     <footer class="page-footer blue-grey darken-3">
           <div class="container">
             <div class="row">
-              <div class="col l6 s12">
+              <div class="col l6 m6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
 
               </div>
               <div class="col l4 s12">
+                <h5 class="white-text">Contact Me</h3>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
                   <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
                 </ul>
               </div>
@@ -165,7 +172,7 @@
           </div>
           <div class="footer-copyright blue-grey darken-4">
             <div class="container">
-            2015 Copyright Text, All Rights Reserved
+            © 2015 | Rayyan Ghani
             </div>
           </div>
         </footer>

@@ -35,11 +35,17 @@
 
     <header>
       <!--Navigation Bar-->
-      <nav>
+      <div class="navbar-fixed">
+      <nav class="z-depth-3">
         <div class="nav-wrapper blue-grey darken-2">
-          <a href="index.html" class="brand-logo deep-orange-text darken-4-text">Rayyan Ghani</a>
+          <a href="index.html" class="brand-logo valign-wrapper hide-on-small-only">
+            <img src="images/rayyan-logo.png" class="valign" style="height: 60px; width:60px; margin-left:20px; margin-top:2px">
+          </a>
+          <a href="index.html" class="brand-logo valign-wrapper hide-on-med-and-up">
+            <img src="images/rayyan-logo.png" class="valign" style="height:50px; width:50px; margin-left:20px; margin-top:1px">
+          </a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-on-down">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
             <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
             <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
@@ -48,10 +54,11 @@
           <ul class="side-nav" id="mobile-demo">
             <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
             <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
-            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-        </ul>
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>s
+          </ul>
         </div>
       </nav>
+      </div>
     </header>
 
 
@@ -68,9 +75,8 @@
               </div>
               <div class="col l4 s12">
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:rghani@uwaterloo.ca" target="_blank">Email</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/rghani" target="_blank">Github</a></li>
                 </ul>
               </div>
             </div>
