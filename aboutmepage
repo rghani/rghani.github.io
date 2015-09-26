@@ -69,14 +69,14 @@
           <ul class="side-nav" id="mobile-demo">
             <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
             <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
-            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>s
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
           </ul>
         </div>
       </nav>
       </div>
     </header>
 
-   
+  
     <!--First image for parallax here-->
     <div class="parallax-container">
     	<div class="parallax"> <img src="images/para1.jpg"class="responsive-img"></div>
@@ -159,6 +159,8 @@
             <div class="row">
               <div class="col l6 m6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
+                <p class="white-text">Education Card picture by Aaron Yim under a CC License</p>
+                <p class="white-text">Logo designed by Guneet Kalra</p>
 
               </div>
               <div class="col l4 s12">
@@ -172,7 +174,7 @@
           </div>
           <div class="footer-copyright blue-grey darken-4">
             <div class="container">
-            © 2015 | Rayyan Ghani
+            ©2015 | Rayyan Ghani
             </div>
           </div>
         </footer>

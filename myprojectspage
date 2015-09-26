@@ -68,10 +68,10 @@
     <div class="row">
       <div class="col l12 m12 s12">
         <ul class="tabs hoverable z-depth-1   ">
-          <li class="tab col s3"><a href="#SafeNight">Safe Night</a></li>
-          <li class="tab col s3"><a href="#EasyBlind">Easy Blind</a></li>
-          <li class="tab col s3"><a href="#FuelCellCar">Fuel Cell Car</a></li>
-          <li class="tab col s3"><a href="#SeasoningDispensingRobot">Seasoning Dispensing Robot</a></li>
+          <li class="tab col s3 truncate"><a href="#SafeNight">Safe Night</a></li>
+          <li class="tab col s3 truncate"><a href="#EasyBlind">Easy Blind</a></li>
+          <li class="tab col s3 truncate"><a href="#FuelCellCar">Fuel Cell Car</a></li>
+          <li class="tab col s3 truncate"><a href="#SeasoningDispensingRobot">Seasoning Dispensing Robot</a></li>
         </ul>
       </div>
     </div>
@@ -274,12 +274,14 @@
     <footer class="page-footer blue-grey darken-3">
           <div class="container">
             <div class="row">
-              <div class="col l6 s12">
+              <div class="col l6 m6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
-                
+                <p class="white-text">Education Card picture by Aaron Yim under a CC License</p>
+                <p class="white-text">Logo designed by Guneet Kalra</p>
 
               </div>
               <div class="col l4 s12">
+                <h5 class="white-text">Contact Me</h3>
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
                   <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
@@ -289,7 +291,7 @@
           </div>
           <div class="footer-copyright blue-grey darken-4">
             <div class="container">
-            © 2015 | Rayyan Ghani
+            ©2015 | Rayyan Ghani
             </div>
           </div>
         </footer>
