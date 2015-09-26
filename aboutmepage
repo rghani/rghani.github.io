@@ -109,7 +109,7 @@
 				<div class="col l4 m4 s12">
 					<div class="card medium hoverable">
 					    <div class="card-image waves-effect waves-block waves-light">
-					      <img class="activator responsive-img" id="aspirationspicture" src="images/aspirations.jpg">
+					      <img class="activator responsive-img" id="aspirationspicture" src="images/aspirationspicture.jpg">
 					    </div>
 					    <div class="card-content">
 					      <span class="card-title activator deep-orange-text text-accent-2">Aspirations<i class="material-icons right">more_vert</i></span>
@@ -125,7 +125,7 @@
 				<div class="col l4 m4 s12">
 					<div class="card medium hoverable">
 					    <div class="card-image waves-effect waves-block waves-light">
-					      <img class="activator responsive-img" src="images/aboutme.jpg">
+					      <img class="activator responsive-img" src="images/experiencepicture.jpg">
 					    </div>
 					    <div class="card-content">
 					      <span class="card-title activator deep-orange-text text-accent-2">Experience<i class="material-icons right">more_vert</i></span>
