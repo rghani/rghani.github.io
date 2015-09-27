@@ -49,14 +49,14 @@
           </a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="light-blue-text darken-4-text"><a href="aboutmepage.html"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-            <li class="light-blue-text darken-4-text"><a href="myprojectspage.html"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
             <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
             <li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
-            <li class="light-blue-text darken-4-text"><a href="aboutmepage.html"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-            <li class="light-blue-text darken-4-text"><a href="myprojectspage.html"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
             <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>s
           </ul>
         </div>
