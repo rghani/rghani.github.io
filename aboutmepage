@@ -2,6 +2,8 @@
 <html>
 
 <head>
+<meta charset="UTF-8">
+   <link rel="shortcut icon" type="image/favicon-icon" href="images/favicon.ico" />
    <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
      <!--Import personal css file-->
@@ -48,7 +50,17 @@
 
 
        
-      <header>
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="mailto:rghani@uwaterloo.ca">Email</a></li>
+        <li><a href="https://github.com/rghani" target="_blank">Github</a></li>
+      </ul>
+
+    <!--Website code-->
+
+    
+
+    <header>
       <!--Navigation Bar-->
       <div class="navbar-fixed">
       <nav class="z-depth-3">
@@ -61,15 +73,16 @@
           </a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="index.html"><i class="tiny material-icons left">home</i>Home</a></li>
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage.html"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage.html"><i class="tiny material-icons left">code</i>My Projects</a></li>
             <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-            <li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
+            <li class="light-blue-text darken-4-text"><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown1'><i class="tiny material-icons left">account_circle</i>Contact Me</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
             <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
-            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>s
           </ul>
         </div>
       </nav>
@@ -94,11 +107,11 @@
 					      <img class="activator responsive-img" id="educationpicture" src="images/educationpicture.jpg">
 					    </div>
 					    <div class="card-content">
-					      <span class="card-title activator deep-orange-text text-accent-2">Education<i class="material-icons right">more_vert</i></span>
-					      <p class="deep-orange-text text-accent-4">Click the title to learn about what I'm studying</p>
+					      <span class="card-title activator black-text text-accent-2">Education<i class="material-icons right">more_vert</i></span>
+					      <p class="black-text text-accent-4">Click the title to learn about what I'm studying</p>
 					    </div>
 					    <div class="card-reveal">
-					      <span class="card-title grey-text text-darken-4"><b>Education</b><i class="material-icons right">close</i></span>
+					      <span class="card-title black-text text-darken-4"><b>Education</b><i class="material-icons right">close</i></span>
 					      <p class="flow-text" id="abtmecardtxt">I'm in second year (2A) studying Mechatronics Engineering at the University of Waterloo. I joined Mechatronics Engineering because I wanted to be a part of the new technological age, an age where mechanical, electronic, and software systems are becoming more integrated then ever before.</p> 
                 <div class="divider"></div>
                 <p class="flow-text" id="abtmecardtxt">Click <a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering">here</a> to learn more about my program and what I'll be studying in the upcoming years.</p>
@@ -112,11 +125,11 @@
 					      <img class="activator responsive-img" id="aspirationspicture" src="images/aspirationspicture.jpg">
 					    </div>
 					    <div class="card-content">
-					      <span class="card-title activator deep-orange-text text-accent-2">Aspirations<i class="material-icons right">more_vert</i></span>
-					      <p class="deep-orange-text text-accent-4">Click the title to learn about my long-term goals</p>
+					      <span class="card-title activator black-text text-accent-2">Aspirations<i class="material-icons right">more_vert</i></span>
+					      <p class="black-text text-accent-4">Click the title to learn about my long-term goals</p>
 					    </div>
 					    <div class="card-reveal">
-					      <span class="card-title grey-text text-darken-4"><b>Aspirations</b><i class="material-icons right">close</i></span>
+					      <span class="card-title black-text text-darken-4"><b>Aspirations</b><i class="material-icons right">close</i></span>
 					      <p class="flow-text" id="abtmecardtxt">A dream of mine since starting university has been to start my own company. Now that I'm in arguably the technological hub of Canada, I'm eager to take advantage of the many resources this region has to offer to start a tech company that isn't a competitor in an existing marketplace, but one that creates a new marketplace. A milestone that I'm setting for myself is to get hired by a tech startup in my upcoming co-op term from Jan 2016 to May 2016.</p>
 					    </div>
 				  	</div>
@@ -128,11 +141,11 @@
 					      <img class="activator responsive-img" src="images/experiencepicture.jpg">
 					    </div>
 					    <div class="card-content">
-					      <span class="card-title activator deep-orange-text text-accent-2">Experience<i class="material-icons right">more_vert</i></span>
-					      <p class="deep-orange-text text-accent-4">Click the title to learn about my skillset</p>
+					      <span class="card-title activator black-text text-accent-2">Experience<i class="material-icons right">more_vert</i></span>
+					      <p class="black-text text-accent-4">Click the title to learn about my skillset</p>
 					    </div>
 					    <div class="card-reveal"> 
-					      <span class="card-title grey-text text-darken-4"><b>Experience</b><i class="material-icons right">close</i></span>
+					      <span class="card-title black-text text-darken-4"><b>Experience</b><i class="material-icons right">close</i></span>
 					      <ul class="collection" id="abtmecard3txt">
 					      	<li class="collection-item flow-text left-align">C++, Python, HTML/CSS, Javascript, jQuery</li>
 					      	<li class="collection-item flow-text left-align">Arduino</li>
@@ -160,15 +173,14 @@
             <div class="row">
               <div class="col l6 m6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
-                <p class="white-text">Education Card picture by Aaron Yim under a CC License</p>
                 <p class="white-text">Logo designed by Guneet Kalra</p>
 
               </div>
               <div class="col l4 s12">
                 <h5 class="white-text">Contact Me</h3>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
+                  <li><a class="black-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
+                  <li><a class="black-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
                 </ul>
               </div>
             </div>

@@ -2,6 +2,8 @@
 <html>
 
 <head>
+<meta charset="UTF-8">
+   <link rel="shortcut icon" type="image/favicon-icon" href="images/favicon.ico" />
    <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
      <!--Import personal css file-->
@@ -36,6 +38,16 @@
 
        
     
+    <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="mailto:rghani@uwaterloo.ca">Email</a></li>
+        <li><a href="https://github.com/rghani" target="_blank">Github</a></li>
+      </ul>
+
+    <!--Website code-->
+
+    
+
     <header>
       <!--Navigation Bar-->
       <div class="navbar-fixed">
@@ -49,10 +61,11 @@
           </a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="index.html"><i class="tiny material-icons left">home</i>Home</a></li>
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage.html"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage.html"><i class="tiny material-icons left">code</i>My Projects</a></li>
             <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-            <li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
+            <li class="light-blue-text darken-4-text"><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown1'><i class="tiny material-icons left">account_circle</i>Contact Me</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
@@ -96,10 +109,10 @@
       <!--Key Learnings-->
       <div class="row">
             <div class="col l12 m12 s12">
-              <div class="card-panel hoverable" id="safenightkeylearnings">
+              <div class="card-panel blue-grey hoverable" id="safenightkeylearnings">
                 <span class="black-text flow-text"><b>Key Learnings:</b></span>
                 <ul class="collection">
-                  <li class="collection-item flow-text">Programming Arduino side Bluetooth Serial Communication with HC-05 Bluetooth Module</li>
+                  <li class="collection-item flow-tex">Programming Arduino side Bluetooth Serial Communication with HC-05 Bluetooth Module</li>
                   <li class="collection-item flow-text">Working with a Liquid Crystal Display to scroll text and continously display status updates</li>
                   <li class="collection-item flow-text">Implementing a more accurate analog to digital calculation for the temperature reading</li>
                 </ul>
@@ -133,8 +146,8 @@
       <div class="row">
         <div class="col l12 m12 s12">
           <div class="card blue-grey hoverable" id="easyblindcard">
-            <span class="card-title"><h5 class="left-align"><b>Easy Blind - Pending</b></h5></span>
-            <p class="flow-text white-text">Easy Blind is an Arduino device that will utilize a photoresistor to detect the amount of light outside, and adjust the angle of your blinds accordingly. A sensor feedback algorithm will be developed to control the bipolar stepper motor in order to control the blinds with precision</p>
+            <span class="card-title"><h5 class="left-align" id="easyblindtxt"><b>Easy Blind - Pending</b></h5></span>
+            <p class="flow-text white-text" id="easyblindtxt">Easy Blind is an Arduino device that will utilize a photoresistor to detect the amount of light outside, and adjust the angle of your blinds accordingly. A sensor feedback algorithm will be developed to control the bipolar stepper motor in order to control the blinds with precision</p>
             <div class="col l12 m12 s12">
               <div class="card-panel hoverable" id="easyblindkeylearnings">
                   <span class="black-text flow-text"><b>Key Learnings:</b></span>
@@ -276,15 +289,14 @@
             <div class="row">
               <div class="col l6 m6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
-                <p class="white-text">Education Card picture by Aaron Yim under a CC License</p>
                 <p class="white-text">Logo designed by Guneet Kalra</p>
 
               </div>
               <div class="col l4 s12">
                 <h5 class="white-text">Contact Me</h3>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
+                  <li><a class="black-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
+                  <li><a class="black-text text-lighten-3" href="https://github.com/rghani" target="_blank">Github</a></li>
                 </ul>
               </div>
             </div>

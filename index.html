@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+   <link rel="shortcut icon" type="image/favicon-icon" href="images/favicon.ico" />
 	 <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
      <!--Import personal css file-->
@@ -11,9 +13,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <!--Import icons-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <title>Rayyan Ghani: Home</title>
 
-      
+      <title>Rayyan Ghani: Home</title>
+   
 </head>
 
 <body class="blue-grey lighten-4">
@@ -33,6 +35,23 @@
       	$('.slider').slider({full_width: true, height: 550});
       });
       </script>
+      <script type="text/javascript">
+        $('.dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin:true, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+          });
+      </script>
+
+    <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="mailto:rghani@uwaterloo.ca">Email</a></li>
+        <li><a href="https://github.com/rghani" target="_blank">Github</a></li>
+      </ul>
 
     <!--Website code-->
 
@@ -42,29 +61,31 @@
       <!--Navigation Bar-->
       <div class="navbar-fixed">
       <nav class="z-depth-3">
-      	<div class="nav-wrapper blue-grey darken-2">
-      		<a href="index.html" class="brand-logo valign-wrapper hide-on-small-only">
+        <div class="nav-wrapper blue-grey darken-2">
+          <a href="index.html" class="brand-logo valign-wrapper hide-on-small-only">
             <img src="images/rayyan-logo.png" class="valign" style="height: 60px; width:60px; margin-left:20px; margin-top:2px">
           </a>
           <a href="index.html" class="brand-logo valign-wrapper hide-on-med-and-up">
             <img src="images/rayyan-logo.png" class="valign" style="height:50px; width:50px; margin-left:20px; margin-top:1px">
           </a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      		<ul id="nav-mobile" class="right hide-on-med-and-down">
-      			<li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-      			<li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
-      			<li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-      			<li class="light-blue-text darken-4-text"><a href="#">Contact Me</a></li>
-      		</ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="light-blue-text darken-4-text"><a href="index"><i class="tiny material-icons left">home</i>Home</a></li>
+            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
+            <li class="light-blue-text darken-4-text"><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown1'><i class="tiny material-icons left">account_circle</i>Contact Me</a></li>
+          </ul>
           <ul class="side-nav" id="mobile-demo">
             <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
             <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
             <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>s
           </ul>
-      	</div>
+        </div>
       </nav>
       </div>
     </header>
+
 
 
 
@@ -73,30 +94,30 @@
 	    <ul class="slides">
 	      <li class="valign-wrapper">
 	        <img src="images/safenightplaceholder.jpg" class="responsive-img"> <!-- Safe Night Arduino Project Image -->
-	        <div class="caption center-align">
-	          <h3 id="slidetext1" class="deep-orange-text">Safe Night Arduino Project</h3>
-	          <h5 class="deep-orange-text">Bluetooth Controlled Security System</h5>
+	        <div class="caption left-align">
+	          <h3 id="slidetext1" class="black-text">Safe Night Arduino Project</h3>
+	          <h5 class="black-text">Bluetooth Controlled Security System</h5>
 	        </div>
 	      </li>
 	      <li>
 	        <img src="images/legofinal4.jpg"class="responsive-img"> <!--Seasoning Dispensing Robot -->
 	        <div class="caption center-align">
-	          <h3 id="slidetext2" class="deep-orange-text">Seasoning Dispensing Robot</h3>
-	          <h5 class="deep-orange-text">Term-ending Mechatronics project</h5>
+	          <h3 id="slidetext2" class="black-text">Seasoning Dispensing Robot</h3>
+	          <h5 class="black-text">Term-ending Mechatronics project</h5>
 	        </div>
 	      </li>
 	      <li>
 	        <img src="images/easyblind1.jpg"class="responsive-img"> <!--EasyBlind-->
 	        <div class="caption left-align">
-	          <h3 class="deep-orange-text">Easy Blind - Pending</h3>
-	          <h5 class="deep-orange-text">Autonomous Blinds Controller</h5>
+	          <h3 class="black-text">Easy Blind - Pending</h3>
+	          <h5 class="black-text">Autonomous Blinds Controller</h5>
 	        </div>
 	      </li>
 	      <li>
 	        <img src="images/fuelcellcarimage1.jpg"class="responsive-img" id="homeslide4"> <!-- Fuel Cell Car -->
 	        <div class="caption left-align">
-	          <h3 class="deep-orange-text">Autonomous line-following car</h3>
-	          <h5 class="deep-orange-text">Powered by Hydrogen Fuel Cells</h5>
+	          <h3 class="black-text">Autonomous line-following car</h3>
+	          <h5 class="black-text">Powered by Hydrogen Fuel Cells</h5>
 	        </di
 	      </li>
 	    </ul>
@@ -114,7 +135,7 @@
 		    				<div class="card-content valign-wrapper">
 		    					<p class="light-blue-text text-darken-2 valign">I'm an engineering student at the  University of Waterloo studying<a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering"> Mechatronics Engineering</a>  with a passion for integrated hardware and software development with the goal to pursue entrepenurship.</p>
 		    				</div>
-		    				<div class="card-action deep-orange-text text-accent-4">
+		    				<div class="card-action black-text text-accent-4">
 		    					<a href="aboutmepage">Click to learn more about me</a>
 		    				</div>
 	    			</div>
@@ -129,7 +150,7 @@
 	    				<div class="card-content">
 	    					<p class="light-blue-text text-darken-2">I've worked on various personal and school related projects, ranging from hardware projects to developing autonomous robots.
 	    				</div>
-	    				<div class="card-action deep-orange-text text-darken-4">
+	    				<div class="card-action black-text text-darken-4">
 	    					<a href="myprojectspage">Click to view my projects in detail</a>
 						</div>
 	    			</div>
@@ -143,15 +164,14 @@
             <div class="row">
               <div class="col l6 m6 s12">
                 <h5 class="white-text">Rayyan Ghani</h5>
-                <p class="white-text">Education Card picture by Aaron Yim under a CC License</p>
                 <p class="white-text">Logo designed by Guneet Kalra</p>
 
               </div>
               <div class="col l4 s12">
                 <h5 class="white-text">Contact Me</h3>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://github.com/rghani">Github</a></li>
+                  <li><a class="black-text text-lighten-3" href="mailto:rghani@uwaterloo.ca">Email</a></li>
+                  <li><a class="black-text text-lighten-3" href="https://github.com/rghani" target="_blank">Github</a></li>
                 </ul>
               </div>
             </div>
