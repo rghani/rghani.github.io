@@ -70,11 +70,11 @@
           </a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="light-blue-text darken-4-text"><a href="index"><i class="tiny material-icons left">home</i>Home</a></li>
-            <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
-            <li class="light-blue-text darken-4-text"><a href="myprojectspage"><i class="tiny material-icons left">code</i>My Projects</a></li>
-            <li class="light-blue-text darken-4-text"><a href="files/resume.pdf"><i class="tiny material-icons left">description</i>Resume</a></li>
-            <li class="light-blue-text darken-4-text"><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown1'><i class="tiny material-icons left">account_circle</i>Contact Me</a></li>
+            <li class="light-blue-text darken-4-text valign-wrapper"><a href="index"><i class="tiny material-icons left valign">home</i>Home</a></li>
+            <li class="light-blue-text darken-4-text valign-wrapper"><a href="aboutmepage"><i class="tiny material-icons left valign">perm_identity</i>About Me</a></li>
+            <li class="light-blue-text darken-4-text valign-wrapper"><a href="myprojectspage"><i class="tiny material-icons left valign">code</i>My Projects</a></li>
+            <li class="light-blue-text darken-4-text valign-wrapper"><a href="files/resume.pdf"><i class="tiny material-icons left valign">description</i>Resume</a></li>
+            <li class="light-blue-text darken-4-text valign-wrapper"><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown1'><i class="tiny material-icons left">account_circle</i>Contact Me</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li class="light-blue-text darken-4-text"><a href="aboutmepage"><i class="tiny material-icons left">perm_identity</i>About Me</a></li>
@@ -94,30 +94,30 @@
 	    <ul class="slides">
 	      <li class="valign-wrapper">
 	        <img src="images/safenightplaceholder.jpg" class="responsive-img"> <!-- Safe Night Arduino Project Image -->
-	        <div class="caption left-align">
-	          <h3 id="slidetext1" class="black-text">Safe Night Arduino Project</h3>
-	          <h5 class="black-text">Bluetooth Controlled Security System</h5>
+	        <div class="caption left-align" id="safenightslidecaption">
+	          <h3 id="slidetext1" class="white-text">Safe Night Arduino Project</h3>
+	          <h5 class="white-text">Bluetooth Controlled Security System</h5>
 	        </div>
 	      </li>
 	      <li>
 	        <img src="images/legofinal4.jpg"class="responsive-img"> <!--Seasoning Dispensing Robot -->
-	        <div class="caption center-align">
-	          <h3 id="slidetext2" class="black-text">Seasoning Dispensing Robot</h3>
-	          <h5 class="black-text">Term-ending Mechatronics project</h5>
+	        <div class="caption left-align" id="nxtslidecaption">
+	          <h3 id="slidetext2" class="white-text">Seasoning Dispensing Robot</h3>
+	          <h5 class="white-text">Term-ending Mechatronics project</h5>
 	        </div>
 	      </li>
 	      <li>
 	        <img src="images/easyblind1.jpg"class="responsive-img"> <!--EasyBlind-->
 	        <div class="caption left-align">
-	          <h3 class="black-text">Easy Blind - Pending</h3>
-	          <h5 class="black-text">Autonomous Blinds Controller</h5>
+	          <h3 class="white-text">Easy Blind - Pending</h3>
+	          <h5 class="white-text">Autonomous Blinds Controller</h5>
 	        </div>
 	      </li>
 	      <li>
 	        <img src="images/fuelcellcarimage1.jpg"class="responsive-img" id="homeslide4"> <!-- Fuel Cell Car -->
 	        <div class="caption left-align">
-	          <h3 class="black-text">Autonomous line-following car</h3>
-	          <h5 class="black-text">Powered by Hydrogen Fuel Cells</h5>
+	          <h3 class="white-text">Autonomous line-following car</h3>
+	          <h5 class="white-text">Powered by Hydrogen Fuel Cells</h5>
 	        </di
 	      </li>
 	    </ul>
@@ -130,10 +130,10 @@
 	    			<div class="card large hoverable" id="card1">
 	    				<div class="card-image">
 	    					<img src="images/aboutme.jpg" class="responsive-img">
-		    				<span class="card-title deep-orange-text text-accent-2"><b>About Me</b></span>
+		    				<span class="card-title deep-orange-text text-accent-2 left" id="cardtitle1"><b>About Me</b></span>
 	    				</div>
-		    				<div class="card-content valign-wrapper">
-		    					<p class="light-blue-text text-darken-2 valign">I'm an engineering student at the  University of Waterloo studying<a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering"> Mechatronics Engineering</a>  with a passion for integrated hardware and software development with the goal to pursue entrepenurship.</p>
+		    				<div class="card-content" id="aboutmecard1">
+		    					<p class="light-blue-text text-darken-2">I'm an engineering student at the  University of Waterloo studying<a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering"> Mechatronics Engineering</a>  with a passion for integrated hardware and software development with the goal to pursue entrepenurship.</p>
 		    				</div>
 		    				<div class="card-action black-text text-accent-4">
 		    					<a href="aboutmepage">Click to learn more about me</a>
@@ -145,9 +145,9 @@
 	    			<div class="card large hoverable" id="card2">
 	    				<div class="card-image">
 	    					<img src="images/projects.jpg" class="responsive-img" id="card2image">
-	    					<span class="card-title deep-orange-text text-accent-2"><b>My Projects</b></span>
+	    					<span class="card-title deep-orange-text text-accent-2 left" id="cardtitle2"><b>My Projects</b></span>
 	    				</div>
-	    				<div class="card-content">
+	    				<div class="card-content" id="aboutmecard2">
 	    					<p class="light-blue-text text-darken-2">I've worked on various personal and school related projects, ranging from hardware projects to developing autonomous robots.
 	    				</div>
 	    				<div class="card-action black-text text-darken-4">

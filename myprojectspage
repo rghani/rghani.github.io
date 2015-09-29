@@ -35,10 +35,6 @@
         $('.slider').slider({full_width: true, height: 550});
       });
       </script>
-      <script type="text/javascript">
-      $(document).ready(function(){$(".button-collapse").sideNav();}
-      	);
-      </script>
 
        
     
@@ -113,7 +109,7 @@
       <!--Key Learnings-->
       <div class="row">
             <div class="col l12 m12 s12">
-              <div class="card-panel hoverable" id="safenightkeylearnings">
+              <div class="card-panel blue-grey hoverable" id="safenightkeylearnings">
                 <span class="black-text flow-text"><b>Key Learnings:</b></span>
                 <ul class="collection">
                   <li class="collection-item flow-tex">Programming Arduino side Bluetooth Serial Communication with HC-05 Bluetooth Module</li>
@@ -152,10 +148,6 @@
           <div class="card blue-grey hoverable" id="easyblindcard">
             <span class="card-title"><h5 class="left-align" id="easyblindtxt"><b>Easy Blind - Pending</b></h5></span>
             <p class="flow-text white-text" id="easyblindtxt">Easy Blind is an Arduino device that will utilize a photoresistor to detect the amount of light outside, and adjust the angle of your blinds accordingly. A sensor feedback algorithm will be developed to control the bipolar stepper motor in order to control the blinds with precision</p>
-            </div>
-        	</div>
-        </div>
-    	<div class="row">
             <div class="col l12 m12 s12">
               <div class="card-panel hoverable" id="easyblindkeylearnings">
                   <span class="black-text flow-text"><b>Key Learnings:</b></span>
@@ -166,10 +158,9 @@
                   </ul>
               </div>
             </div>
+          </div>
         </div>
-          
-        
-      
+      </div>
       
     </div>
 
@@ -245,7 +236,7 @@
       <div class="row">
         <div class="col l12 m12 s12">
           <div class="card-panel hoverable" id="safenightkeylearnings">
-            <span class="black-text flow-text"><b>Key Learnings:</b></span>
+            <span class="flow-text"><b>Key Learnings:</b></span>
             <ul class="collection">
               <li class="collection-item flow-text">Measuring and machining the seasoning cup holders using bandsaws, and sanders</li>
               <li class="collection-item flow-text">Coding and debugging RobotC code</li>
