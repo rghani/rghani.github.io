@@ -41,6 +41,7 @@
     -moz-transform:scale(1); /* Firefox */
     -webkit-transform:scale(1); /* Safari and Chrome */
     -o-transform:scale(1); /* Opera */
+}
 
 
 
@@ -86,6 +87,9 @@
 }
 #easyblindtxt{
 	padding-left: 15px;
+}
+.flow-text{
+	font-size: 1.4rem;
 }
 
 
